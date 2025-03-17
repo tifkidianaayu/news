@@ -1,18 +1,186 @@
 <!DOCTYPE html>
+<!-- WAJIB: pakai atribut ⚡ atau amp -->
 <html ⚡ lang="id">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <title>Beranda - Daftar Topik</title>
+
+    <!-- WAJIB: Meta viewport khusus AMP -->
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+
+    <!-- Opsional: link canonical (ke halaman aslinya, jika ada) -->
+    <link rel="canonical" href="https://tifkidianaayu.github.io/index.html" />
+
+    <!-- WAJIB: Memanggil skrip AMP utama -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <!-- Opsional: Verifikasi Google Search Console -->
     <meta name="google-site-verification" content="DAytAI-FL_NEFEpx7tvXc_vXpiTYW743bWvF02Bq8cY" />
-    <title>Beranda</title>
+
+    <!-- WAJIB: style amp-boilerplate -->
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1,end) 0s 1 normal both
+      }
+      @-webkit-keyframes -amp-start {
+        from { visibility: hidden }
+        to   { visibility: visible }
+      }
+      @-moz-keyframes -amp-start {
+        from { visibility: hidden }
+        to   { visibility: visible }
+      }
+      @-ms-keyframes -amp-start {
+        from { visibility: hidden }
+        to   { visibility: visible }
+      }
+      @-o-keyframes -amp-start {
+        from { visibility: hidden }
+        to   { visibility: visible }
+      }
+      @keyframes -amp-start {
+        from { visibility: hidden }
+        to   { visibility: visible }
+      }
+    </style>
+    <!-- WAJIB: noscript style amp-boilerplate -->
+    <noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none
+        }
+      </style>
+    </noscript>
+
+    <!-- OPSIONAL: CSS kustom agar tampilan lebih elegan -->
+    <style amp-custom>
+      /* Reset dasar */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Prompt', sans-serif;
+        /* Latar belakang gradasi gelap */
+        background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
+        color: #f2f2f2;
+      }
+
+      /* Kontainer utama */
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+
+      /* Judul Halaman */
+      .page-title {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      .page-title h1 {
+        font-size: 28px;
+        margin: 0;
+        color: #ffd966; /* kuning keemasan */
+      }
+
+      /* Daftar artikel */
+      .article-list {
+        display: grid;
+        grid-gap: 16px;
+      }
+      .article-item {
+        background: rgba(255,255,255,0.06);
+        border-radius: 8px;
+        padding: 16px;
+        transition: background 0.3s;
+      }
+      .article-item:hover {
+        background: rgba(255,255,255,0.12);
+      }
+      .article-item h2 {
+        margin: 0 0 8px 0;
+        font-size: 20px;
+        color: #ffd966;
+      }
+      .article-item a {
+        text-decoration: none;
+        color: #f4d97e;
+        font-weight: 600;
+      }
+      .article-item a:hover {
+        color: #fff;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        color: #888;
+        font-size: 14px;
+      }
+      footer a {
+        color: #ffd966;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: #fff;
+      }
+    </style>
+
   </head>
   <body>
-    <h1>TOPIK PERTAMA</h1>
-    <a href="Mengapa-Sering-Kalah-Strategi-Jitu-dan-Pengelolaan-Modal-di-Mahjong-Ways-dan-PG-Soft.html">Buka artikel</a>
-      <h1>TOPIK KEDUA</h1>
-    <a href="news/Mengenal-Ragam-Game-Pragmatic-Play-Fitur-Unggulan-yang-Menarik.html">Buka artikel</a>
-      <h1>TOPIK KETIGA</h1>
-    <a href="news/Keunikan-Game-PGSoft-Dari-Desain-hingga-Sistem-Kemenangan.html">Buka artikel</a>
-      <h1>TOPIK KEEMPAT</h1>
-    <a href="Rahasia-Bermain-Game-Online-dan-Tips-Pemula-agar-Cepat-Raih-Untung.html">Buka artikel</a>
+    <!-- Konten Utama -->
+    <div class="container">
+      <header class="page-title">
+        <h1>Daftar Topik Utama</h1>
+      </header>
+
+      <section class="article-list">
+        <!-- TOPIK PERTAMA -->
+        <div class="article-item">
+          <h2>TOPIK PERTAMA</h2>
+          <a href="Mengapa-Sering-Kalah-Strategi-Jitu-dan-Pengelolaan-Modal-di-Mahjong-Ways-dan-PG-Soft.html">
+            Buka artikel
+          </a>
+        </div>
+
+        <!-- TOPIK KEDUA -->
+        <div class="article-item">
+          <h2>TOPIK KEDUA</h2>
+          <a href="news/Mengenal-Ragam-Game-Pragmatic-Play-Fitur-Unggulan-yang-Menarik.html">
+            Buka artikel
+          </a>
+        </div>
+
+        <!-- TOPIK KETIGA -->
+        <div class="article-item">
+          <h2>TOPIK KETIGA</h2>
+          <a href="news/Keunikan-Game-PGSoft-Dari-Desain-hingga-Sistem-Kemenangan.html">
+            Buka artikel
+          </a>
+        </div>
+
+        <!-- TOPIK KEEMPAT -->
+        <div class="article-item">
+          <h2>TOPIK KEEMPAT</h2>
+          <a href="Rahasia-Bermain-Game-Online-dan-Tips-Pemula-agar-Cepat-Raih-Untung.html">
+            Buka artikel
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      &copy; 2025 <a href="https://tifkidianaayu.github.io">AMP Beranda</a> - All Rights Reserved.
+    </footer>
   </body>
 </html>
